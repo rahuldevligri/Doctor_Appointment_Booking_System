@@ -37,7 +37,6 @@ public class JwtTokenAuthenticationFilter extends GenericFilterBean {
 //        ((HttpServletResponse) res).setHeader("Access-Control-Allow-Headers", "x-requested-with, authorization, Content-Type, Authorization, credential, X-XSRF-TOKEN");
 //        ((HttpServletResponse) res).setHeader("Access-Control-Allow-Credentials", "true");
         String token = resolveToken((HttpServletRequest) req);
-        log.info("Extracting token from HttpServletRequest: {}", token);
 
         if (token != null && jwtTokenProvider.validateToken(token)) {
             Authentication auth = jwtTokenProvider.getAuthentication(token);

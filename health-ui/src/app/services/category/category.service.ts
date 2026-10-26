@@ -16,7 +16,6 @@ export class CategoryService{
   constructor(private http: HttpClient,private doctorListService: DoctorListService) {}
   getCategories():Observable<User[]>{
     let token = localStorage.getItem('token');
-    console.log(token);
     const headers = new HttpHeaders({
 
       'Content-Type': 'application/json',

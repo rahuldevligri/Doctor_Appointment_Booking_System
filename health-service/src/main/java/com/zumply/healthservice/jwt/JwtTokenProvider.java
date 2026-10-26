@@ -81,7 +81,7 @@ public class JwtTokenProvider {
             log.info("expiration date: {}", claims.getBody().getExpiration());
             return true;
         } catch (JwtException | IllegalArgumentException e) {
-            log.error("Invalid JWT token: {}", e.getMessage());
+            log.warn("JWT validation failed.");
         }
         return false;
     }

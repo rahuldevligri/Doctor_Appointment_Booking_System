@@ -17,7 +17,6 @@ export class DoctorListService {
 
   getDoctorsList(id:number): Observable<Doctor[]> {
     let token = localStorage.getItem('token');
-    console.log("token in getDoctorsList() doctorlist.service.ts "+ token);
     console.log("Doctor ID in getDoctorList() doctorlist.service.ts "+ id);
     const headers = new HttpHeaders({
 
@@ -26,14 +25,12 @@ export class DoctorListService {
   
     });
     const requestOptions = { headers: headers };  
-    console.log("headers in getDoctorsList() doctorlist.service.ts "+ headers);
     return this.httpClient.get<Doctor[]>(`${this.baseURL}/api/v1/doctor/specializationId/${id}`,requestOptions);
     
   }
 
   getDoctorSchedule(id): Observable<Doctor[]> {
     let token = localStorage.getItem('token');
-    console.log("token in getDoctorSchedule() doctorlist.service.ts "+ token);
     console.log("ID in getDoctorSchedule() doctorlist.service.ts "+ id);
     const headers = new HttpHeaders({
 
@@ -42,7 +39,6 @@ export class DoctorListService {
   
     });
     const requestOptions = { headers: headers };  
-    console.log("headers in getDoctorSchedule() doctorlist.service.ts "+ headers);
     return this.httpClient.get<Doctor[]>(`${this.baseURL}/doctorSchedule/doctorId/${id}`,requestOptions);
     
   }

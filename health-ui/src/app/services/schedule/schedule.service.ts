@@ -15,7 +15,6 @@ export class ScheduleService {
 
   getScheduleList(doctorId: number): Observable<Schedule[]> {
     let token = localStorage.getItem('token');
-    console.log('token ',token);
     console.log("doctorId ",doctorId);
     const headers = new HttpHeaders({
 

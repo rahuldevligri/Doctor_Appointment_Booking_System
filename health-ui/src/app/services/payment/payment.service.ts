@@ -13,7 +13,6 @@ export class PaymentService {
 
   getPaymentList(id:number): Observable<any> {
     let token = localStorage.getItem('token');
-    console.log("token in getPaymentList() in payment.service.ts ",token);
     console.log("id in getPaymentList() in payment.service.ts ",id);
     const headers = new HttpHeaders({
 
