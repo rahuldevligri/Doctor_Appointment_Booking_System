@@ -1,0 +1,31 @@
+﻿
+# Generated backend files
+/health-service/.gradle/
+/health-service/build/
+/health-service/.idea/
+/health-service/.vscode/
+/health-service/out/
+/health-service/bin/
+
+# Generated frontend files
+/health-ui/node_modules/
+/health-ui/.angular/
+/health-ui/dist/
+/health-ui/coverage/
+/health-ui/.idea/
+/health-ui/.vscode/
+
+# Local environment files and logs
+**/.env
+**/.env.*
+!**/.env.example
+**/*.log
+
+# Local application configuration - do not commit
+/health-service/src/main/resources/application.properties
+/health-service/src/main/resources/application-dev.properties
+/health-service/src/main/resources/application-prod.properties
+/health-service/src/main/resources/zumply.properties
+
+# Ignore accidental terminal output
+/fsdf

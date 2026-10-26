@@ -1,0 +1,116 @@
+/* Container to center the card */
+.container {
+    margin:  auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: #ffffff;
+  }
+  
+  .user-card {
+    background: linear-gradient(135deg, #6b6b6b, #000000);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .user-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .header {
+    background: #dd4803;
+    padding: 25px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 30px;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .body {
+    padding: 30px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .user-info table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-info td {
+    padding: 15px 10px;
+  }
+  
+  .user-info td:first-child {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 15px;
+    color: #e0e0e0;
+  }
+  
+  .user-info td:last-child {
+    color: #ffffff;
+  }
+  
+  .user-info p {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 5px 0;
+  }
+  
+  .details {
+    border-top: 1px solid #eeeeee;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+  .details p {
+    font-size: 18px;
+    color: #666666;
+    margin: 5px 0;
+  }
+  
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #dddddd;
+  }
+  
+  .footer .btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .footer .btn:hover {
+    background-color: #45a049;
+  }
+  
+  .footer .btn:active {
+    background-color: #388e3c;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .user-card {
+      width: 90%;
+    }
+  }
+  

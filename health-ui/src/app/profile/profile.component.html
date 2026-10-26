@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="user-card">
+    <div class="header">
+      <h1>User Profile</h1>
+    </div>
+    <div class="body">
+      <div class="user-info">
+        <table>
+          <tr>
+            <td>Username :</td>
+            <td>{{ username }}</td>
+          </tr>
+          <tr>
+            <td>Name :</td>
+            <td>{{ userProfile?.firstName }} {{ userProfile?.middleName ? userProfile?.middleName + ' ' : '' }}{{ userProfile?.lastName }}</td>
+          </tr>
+          <tr>
+            <td>Gender :</td>
+            <td>{{ userProfile?.gender }}</td>
+          </tr>
+          <tr>
+            <td>Mobile :</td>
+            <td>+91 {{ userProfile?.mobile }}</td>
+          </tr>
+          <tr>
+            <td>Email :</td>
+            <td>{{ userProfile?.email }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  

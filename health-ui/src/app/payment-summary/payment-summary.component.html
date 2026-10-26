@@ -1,0 +1,101 @@
+<div class="container">
+    <div>
+      <h4 class="text-center">Appointment Booked Successfully</h4>
+    </div>
+  
+    <div class="Information">
+      <div class="docInfo">
+        <div class="userName">
+          <p>
+            <span class="label">User Name</span>
+            <span class="colon" style="margin-left: 5.4rem;">:</span>
+            <span class="value">{{ paymentList[0]?.user?.username }}</span>
+          </p>
+        </div>
+        <div class="docName">
+          <p>
+            <span class="label">Doctor Name</span>
+            <span class="colon" style="margin-left: 4.4rem;">:</span>
+            <span class="value">{{ paymentList[0]?.doctor?.fullName }}</span>
+          </p>
+        </div>
+        <div class="docSpeciality">
+          <p>
+            <span class="label">Dr. Specialization</span>
+            <span class="colon" style="margin-left: 2.7rem;">:</span>
+            <span class="value">{{ paymentList[0]?.doctor?.doctorSpecialization?.specializationName }}</span>
+          </p>
+        </div>
+        <div class="docEmail">
+          <p>
+            <span class="label">Dr. Email</span>
+            <span class="colon" style="margin-left: 6.4rem;">:</span>
+            <span class="value">{{ paymentList[0]?.doctor?.email }}</span>
+          </p>
+        </div>
+        <div class="docMobile">
+          <p>
+            <span class="label">Dr. Mobile no.</span>
+            <span class="colon" style="margin-left: 4.2rem;">:</span>
+            <span class="value">{{ paymentList[0]?.doctor?.mobile }}</span>
+          </p>
+        </div>
+        <div class="Date">
+          <p>
+            <span class="label">Date</span>
+            <span class="colon" style="margin-left: 7.9rem;">:</span>
+            <span class="value">{{ paymentList[0]?.doctorSchedule?.startTime | slice:0:10 }}</span>
+          </p>
+        </div>
+        <div class="startTime">
+          <p>
+            <span class="label">Start Time</span>
+            <span class="colon" style="margin-left: 5.6rem;">:</span>
+            <span class="value">{{ paymentList[0]?.doctorSchedule?.startTime | slice:11:16 }}</span>
+          </p>
+        </div>
+        <div class="endTime">
+          <p>
+            <span class="label">End Time</span>
+            <span class="colon" style="margin-left: 6.1rem;">:</span>
+            <span class="value">{{ paymentList[0]?.doctorSchedule?.endTime | slice:11:16 }}</span>
+          </p>
+        </div>
+        <div class="hosName">
+          <p>
+            <span class="label">Hospital Name</span>
+            <span class="colon" style="margin-left: 3.5rem;">:</span>
+            <span class="value">{{ hospitalName }}</span>
+          </p>
+        </div>
+        <div class="hosAddress">
+          <p>
+            <span class="label">Hospital Address</span>
+            <span class="colon" style="margin-left: 2.6rem;">:</span>
+            <span class="value">{{ hospitalAddress }}</span>
+          </p>
+        </div>
+        <div class="amount">
+          <p>
+            <span class="label">Amount</span>
+            <span class="colon" style="margin-left: 6.7rem;">:</span>
+            <span class="value">{{ paymentList[0]?.payment?.amount }}</span>
+          </p>
+        </div>
+        <div class="paymentStatus">
+          <p>
+            <span class="label">Payment status</span>
+            <span class="colon" style="margin-left: 3.2rem;">:</span>
+            <span class="value">{{ paymentList[0]?.payment?.status }}</span>
+          </p>
+        </div>
+        <div class="appointmentStatus">
+          <p>
+            <span class="label">Appointment Status</span>
+            <span class="colon" style="margin-left: 1.6rem;">:</span>
+            <span class="value">{{ paymentList[0]?.status }}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>

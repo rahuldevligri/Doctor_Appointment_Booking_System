@@ -1,0 +1,194 @@
+/* Table Styles */
+.table {
+  width: 90%; /* Adjust the width as needed */
+  margin: 20px auto; /* Center the table and add some margin */
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  font-family: Arial, sans-serif;
+}
+
+.table thead {
+  background-color: #f2f2f2;
+}
+
+.table th,
+.table td {
+  padding: 8px 10px; /* Reduced padding */
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Doctor Name and Appointment ID Styles */
+.table td.doctor-name,
+.table td.appointment-id {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+/* Amount Styles */
+.table td.amount {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Date and Time Styles */
+.table td.date-time {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+.table td.date-time span.date {
+  display: block;
+  font-weight: bold;
+}
+
+.table td.date-time span.time {
+  display: block;
+  font-size: 12px;
+  color: #555;
+}
+
+/* Status Styles */
+.status-booked {
+  color: #fff;
+  background-color: #5cb85c; /* Green */
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.status-cancelled {
+  color: #fff;
+  background-color: #d9534f; /* Red */
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.status-paid {
+  color: #fff;
+  background-color: #5bc0de; /* Blue */
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.status-unpaid {
+  color: #fff;
+  background-color: #f0ad4e; /* Orange */
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Action Styles */
+.table td.action {
+  text-align: center;
+}
+
+.cancel-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #d9534f; /* Red */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+  background-color: #c9302c;
+}
+
+/* Pagination Controls */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #5bc0de; /* Blue */
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.pagination-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-info {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Confirmation Dialog Styles */
+.confirmation-dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.confirmation-dialog p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.confirmation-dialog button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.confirmation-dialog button:first-of-type {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.confirmation-dialog button:first-of-type:hover {
+  background-color: #c9302c;
+}
+
+.confirmation-dialog button:last-of-type {
+  background-color: #5bc0de;
+  color: #fff;
+}
+
+.confirmation-dialog button:last-of-type:hover {
+  background-color: #31b0d5;
+}
